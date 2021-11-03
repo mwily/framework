@@ -281,7 +281,7 @@ abstract class AbstractInput
     public function getOpt(string $name, $default = null)
     {
         // is long-opt
-        if (isset($name{1})) {
+        if (isset($name[1])) {
             return $this->lOpt($name, $default);
         }
 
